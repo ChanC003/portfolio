@@ -114,7 +114,9 @@ function renderModal(projectId) {
 
     <div class="modal-links">
       <a href="${p.githubUrl}" target="_blank" class="modal-link-btn secondary">&#128279; ${tl('modal.github')}</a>
-      <a href="${p.demoUrl}"   target="_blank" class="modal-link-btn primary">&#128196; ${tl('modal.demo')}</a>
+      ${p.demoUrl && p.demoUrl !== '#'
+        ? `<a href="${p.demoUrl}" target="_blank" class="modal-link-btn primary">${p.demoIcon || '&#128196;'} ${p.demoLabel ? tl(p.demoLabel) : tl('modal.demo')}</a>`
+        : ''}
     </div>`;
 }
 

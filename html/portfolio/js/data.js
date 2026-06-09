@@ -107,7 +107,9 @@ const PROJECTS = [
       'Result auto-charting (time-series → line, ranking → bar) + one-click "Explain SQL" in plain language',
     ],
     githubUrl: 'https://github.com/ChanC003/ai-analytics-assistant',
-    demoUrl: '#',
+    demoUrl: 'https://github.com/ChanC003/ai-analytics-assistant#ai-analytics-assistant',
+    demoLabel: 'modal.screenshots',
+    demoIcon: '&#128247;',
   },
   {
     id: 'data-governance',
