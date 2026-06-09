@@ -1,0 +1,39 @@
+name: Deploy Portfolio to GitHub Pages
+
+# Static portfolio (html/portfolio/) — pure HTML/CSS/JS, no build step.
+# Deploy lên GitHub Pages mỗi khi push main.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Chỉ 1 deploy chạy 1 lúc
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload portfolio folder
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: html/portfolio      # site root = trang portfolio (index.html + css + js/)
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

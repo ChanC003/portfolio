@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chang PH — Data Engineer & Analyst</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="galaxyCanvas"></canvas>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <div class="nav-robot" id="navRobot" title="Hi! I'm Changie 🤖">
+        <div class="robot-head">
+          <div class="robot-antenna"></div>
+          <div class="robot-face">
+            <div class="robot-eye robot-eye-left"></div>
+            <div class="robot-eye robot-eye-right"></div>
+            <div class="robot-mouth"></div>
+          </div>
+        </div>
+      </div>
+      <span class="nav-logo">Chang<span class="accent">.</span></span>
+      <span class="nav-role">Data Engineer &amp; Analyst</span>
+    </div>
+    <div class="nav-right">
+      <a href="#about"    class="nav-link" data-i18n="nav.about">About</a>
+      <a href="#stack"    class="nav-link" data-i18n="nav.stack">Stack</a>
+      <a href="#projects" class="nav-link" data-i18n="nav.projects">Projects</a>
+      <a href="#contact"  class="nav-link" data-i18n="nav.contact">Contact</a>
+
+      <!-- Language toggle -->
+      <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+        <span class="lang-active">EN</span>
+        <span class="lang-sep">/</span>
+        <span class="lang-inactive">VI</span>
+      </button>
+
+      <a href="#contact" class="nav-cta" data-i18n="nav.hire">Hire me</a>
+    </div>
+    <button class="nav-burger" id="navBurger" aria-label="Menu">&#9776;</button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about"    class="mobile-link" data-i18n="nav.about">About</a>
+    <a href="#stack"    class="mobile-link" data-i18n="nav.stack">Stack</a>
+    <a href="#projects" class="mobile-link" data-i18n="nav.projects">Projects</a>
+    <a href="#contact"  class="mobile-link" data-i18n="nav.contact">Contact</a>
+    <!-- Lang toggle in mobile menu -->
+    <button class="lang-toggle lang-toggle-mobile" id="langToggleMobile" aria-label="Switch language">
+      <span class="lang-active">EN</span>
+      <span class="lang-sep">/</span>
+      <span class="lang-inactive">VI</span>
+    </button>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="about">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span data-i18n="hero.badge">Open to opportunities</span>
+      </div>
+      <h1 class="hero-title">
+        <span data-i18n="hero.title1">Building data systems</span><br />
+        <span class="accent" data-i18n="hero.title2">that actually work</span>
+      </h1>
+      <p class="hero-sub" data-i18n="hero.sub">
+        2 years turning raw event streams, messy CSVs, and legacy SQL into
+        production pipelines — from Kafka ingestion to BI dashboards and
+        AI-powered analytics. Ready for the AI-native data stack.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary" data-i18n="hero.cta1">View Projects</a>
+        <a href="#contact"  class="btn-ghost"   data-i18n="hero.cta2">Get in touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-val"  data-i18n="hero.stat1.val">4</span>
+          <span class="stat-label" data-i18n="hero.stat1.label">End-to-end projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-val"  data-i18n="hero.stat2.val">2yr</span>
+          <span class="stat-label" data-i18n="hero.stat2.label">Experience</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-val"  data-i18n="hero.stat3.val">8+</span>
+          <span class="stat-label" data-i18n="hero.stat3.label">Tools &amp; frameworks</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-photo-wrap">
+        <img src="avatar.jpg" alt="Chang PH" class="hero-avatar" />
+        <div class="hero-photo-badge">
+          <span class="hero-photo-badge-dot"></span>
+          <span data-i18n="hero.photo.badge">Open to work</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT STRIP -->
+  <section class="about-strip">
+    <div class="about-grid">
+      <div class="about-photo-col">
+        <img src="photo2.jpg" alt="Chang PH" class="about-photo" />
+      </div>
+      <div class="about-blocks-col">
+        <div class="about-block">
+          <div class="about-icon">&#9881;</div>
+          <div>
+            <div class="about-block-title" data-i18n="about.block1.title">Data Engineering</div>
+            <div class="about-block-desc"  data-i18n="about.block1.desc">Pipelines, orchestration, CDC, streaming — built to run at 3 AM without waking anyone up.</div>
+          </div>
+        </div>
+        <div class="about-block">
+          <div class="about-icon">&#128202;</div>
+          <div>
+            <div class="about-block-title" data-i18n="about.block2.title">Analytics</div>
+            <div class="about-block-desc"  data-i18n="about.block2.desc">From dbt models to Power BI dashboards — metrics that stakeholders actually trust.</div>
+          </div>
+        </div>
+        <div class="about-block">
+          <div class="about-icon">&#129302;</div>
+          <div>
+            <div class="about-block-title" data-i18n="about.block3.title">AI-Augmented</div>
+            <div class="about-block-desc"  data-i18n="about.block3.desc">LLM-powered NL-to-SQL, semantic layer querying — bridging data and the AI era.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section class="stack-section" id="stack">
+    <div class="section-header">
+      <span class="section-tag"  data-i18n="stack.tag">Tech Stack</span>
+      <h2 class="section-title"  data-i18n="stack.title">Tools I build with</h2>
+    </div>
+    <div class="stack-grid" id="stackGrid"></div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects-section" id="projects">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="projects.tag">Projects</span>
+      <h2 class="section-title" data-i18n="projects.title">End-to-end work</h2>
+      <p class="section-sub"    data-i18n="projects.sub">Each project is production-mirrored — not toy examples.</p>
+    </div>
+
+    <!-- Filter tabs -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all"         data-i18n="filter.all">All</button>
+      <button class="filter-btn"        data-filter="engineering" data-i18n="filter.engineering">Data Engineering</button>
+      <button class="filter-btn"        data-filter="analytics"   data-i18n="filter.analytics">Analytics</button>
+      <button class="filter-btn"        data-filter="ai"          data-i18n="filter.ai">AI / ML</button>
+      <button class="filter-btn"        data-filter="realtime"    data-i18n="filter.realtime">Real-time</button>
+      <button class="filter-btn"        data-filter="governance"  data-i18n="filter.governance">Governance</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid"></div>
+  </section>
+
+  <!-- PROJECT MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="projectModal">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="modal-body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="contact-inner">
+      <span class="section-tag"   data-i18n="contact.tag">Contact</span>
+      <h2 class="contact-title"   data-i18n="contact.title">Let's build something together</h2>
+      <p class="contact-sub"      data-i18n="contact.sub">Open to Data Engineer, Analytics Engineer, Data Analyst, or Data Governance roles. Remote or Ha Noi.</p>
+      <div class="contact-links">
+        <a href="mailto:huyenchang2k03@gmail.com" class="contact-btn">
+          <span class="contact-icon">&#9993;</span> huyenchang2k03@gmail.com
+        </a>
+        <a href="https://github.com/" target="_blank" class="contact-btn ghost">
+          <span class="contact-icon">&#128279;</span>
+          <span data-i18n="contact.github">GitHub</span>
+        </a>
+        <a href="https://linkedin.com/" target="_blank" class="contact-btn ghost">
+          <span class="contact-icon">&#128279;</span>
+          <span data-i18n="contact.linkedin">LinkedIn</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHATBOT — Ask Changie -->
+  <button class="chat-fab" id="chatFab" aria-label="Open chat">
+    <div class="chat-fab-icon">
+      <div class="chat-fab-eye chat-fab-eye-left"></div>
+      <div class="chat-fab-eye chat-fab-eye-right"></div>
+      <div class="chat-fab-mouth"></div>
+    </div>
+    <div class="chat-fab-pulse"></div>
+    <span class="chat-fab-dot"></span>
+  </button>
+
+  <div class="chat-panel" id="chatPanel">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <div class="chat-header-avatar">
+          <div class="chat-fab-eye chat-fab-eye-left"></div>
+          <div class="chat-fab-eye chat-fab-eye-right"></div>
+        </div>
+        <div>
+          <div class="chat-header-name">Changie AI</div>
+          <div class="chat-header-status"><span class="chat-status-dot"></span> <span data-i18n="chat.online">Online — ask me anything</span></div>
+        </div>
+      </div>
+      <button class="chat-close" id="chatClose" aria-label="Close chat">&times;</button>
+    </div>
+
+    <div class="chat-body" id="chatBody"></div>
+
+    <div class="chat-suggestions" id="chatSuggestions"></div>
+
+    <form class="chat-input-wrap" id="chatForm">
+      <input type="text" class="chat-input" id="chatInput" autocomplete="off" />
+      <button type="submit" class="chat-send" aria-label="Send">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg>
+      </button>
+    </form>
+
+    <div class="chat-footer">
+      <span data-i18n="chat.footer">Powered by Changie · Smart rule-based assistant</span>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span>Chang PH &copy; 2025</span>
+    <span class="footer-sep">·</span>
+    <span data-i18n="footer.role">Data Engineer &amp; Analyst</span>
+    <span class="footer-sep">·</span>
+    <span data-i18n="footer.city">Ha Noi, Vietnam</span>
+  </footer>
+
+  <script src="js/galaxy.js"></script>
+  <script src="js/constants.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/lang.js"></script>
+  <script src="js/kb-data.js"></script>
+  <script src="js/chatbot.js"></script>
+  <script src="js/interactions.js"></script>
+  <script src="js/init.js"></script>
+</body>
+</html>
