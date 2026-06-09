@@ -107,9 +107,11 @@ const PROJECTS = [
       'Result auto-charting (time-series → line, ranking → bar) + one-click "Explain SQL" in plain language',
     ],
     githubUrl: 'https://github.com/ChanC003/ai-analytics-assistant',
-    demoUrl: 'https://github.com/ChanC003/ai-analytics-assistant#ai-analytics-assistant',
-    demoLabel: 'modal.screenshots',
-    demoIcon: '&#128247;',
+    demoUrl: '#',
+    screenshots: [
+      { src: 'screenshots/ai-dashboard.png', caption: 'Realtime Market Dashboard — auto-refreshing KPIs + 5 analytics charts' },
+      { src: 'screenshots/ai-ask.png',       caption: 'Ask the AI — plain English → SQL → chart + table (Download CSV / Explain SQL)' },
+    ],
   },
   {
     id: 'data-governance',

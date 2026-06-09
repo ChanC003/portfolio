@@ -174,6 +174,18 @@
     </div>
   </div>
 
+  <!-- SCREENSHOT LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Previous">&#10094;</button>
+    <div class="lightbox-stage">
+      <img class="lightbox-img" id="lightboxImg" alt="screenshot">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+      <div class="lightbox-counter" id="lightboxCounter"></div>
+    </div>
+    <button class="lightbox-nav next" id="lightboxNext" aria-label="Next">&#10095;</button>
+  </div>
+
   <!-- CONTACT -->
   <section class="contact-section" id="contact">
     <div class="contact-inner">
@@ -252,6 +264,7 @@
   <script src="js/data.js"></script>
   <script src="js/state.js"></script>
   <script src="js/render.js"></script>
+  <script src="js/lightbox.js"></script>
   <script src="js/i18n.js"></script>
   <script src="js/lang.js"></script>
   <script src="js/kb-data.js"></script>

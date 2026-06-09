@@ -114,9 +114,11 @@ function renderModal(projectId) {
 
     <div class="modal-links">
       <a href="${p.githubUrl}" target="_blank" class="modal-link-btn secondary">&#128279; ${tl('modal.github')}</a>
-      ${p.demoUrl && p.demoUrl !== '#'
-        ? `<a href="${p.demoUrl}" target="_blank" class="modal-link-btn primary">${p.demoIcon || '&#128196;'} ${p.demoLabel ? tl(p.demoLabel) : tl('modal.demo')}</a>`
-        : ''}
+      ${p.screenshots && p.screenshots.length
+        ? `<button type="button" class="modal-link-btn primary" onclick="openLightbox('${p.id}')">&#128247; ${tl('modal.screenshots')}</button>`
+        : (p.demoUrl && p.demoUrl !== '#'
+            ? `<a href="${p.demoUrl}" target="_blank" class="modal-link-btn primary">&#128196; ${tl('modal.demo')}</a>`
+            : '')}
     </div>`;
 }
 
