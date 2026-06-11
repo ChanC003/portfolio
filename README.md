@@ -11,7 +11,7 @@ Mở [html/portfolio/index.html](html/portfolio/index.html) bằng bất kỳ tr
 
 ## Nội dung
 
-- **5 project** showcase: Banking Pipeline · Logistics Analytics · AI Analytics Assistant · Data Governance · HR Analytics Platform
+- **4 project** showcase: Banking Pipeline · Logistics Analytics · AI Analytics Assistant · HR Analytics Platform
 - **Song ngữ** EN / VI (toggle, lưu localStorage)
 - **Chatbot** rule-based "Changie AI" giới thiệu về Chang
 - **Galaxy background** canvas star-field

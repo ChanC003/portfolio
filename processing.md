@@ -67,7 +67,7 @@ Single-page portfolio, mở trực tiếp file://, không cần server.
 - **Hero** — ảnh chân dung bên TRÁI, text + stats + CTA bên PHẢI, badge "Open to work" pulse green
 - **About strip** — ảnh street-style bên trái + 3 pillar blocks (Engineering / Analytics / AI-Augmented)
 - **Tech Stack** — 5 categorized chip groups (Ingestion, Orchestration, Storage, BI, AI Tools)
-- **Projects** — 4 cards với galaxy mini-background, filter tabs (All / Engineering / Analytics / AI / Real-time / Governance)
+- **Projects** — 4 cards với galaxy mini-background, filter tabs (All / Engineering / Analytics / AI / Real-time)
 - **Modal** — architecture diagram + 6 highlights + tech chips + GitHub/Demo links
 - **Contact** — email + GitHub + LinkedIn buttons
 - **Footer**
@@ -76,7 +76,7 @@ Single-page portfolio, mở trực tiếp file://, không cần server.
 1. **End-to-End Real-Time Banking Pipeline** (featured) — PostgreSQL → Debezium CDC → Kafka → Snowflake → dbt → Airflow → Power BI
 2. **Logistics Analytics Platform** — Python, DuckDB, dbt, Airflow, Power BI, Docker
 3. **AI Analytics Assistant** (featured) — Streamlit + OpenAI/Ollama NL2SQL → PostgreSQL
-4. **Data Governance & Quality Platform** — dbt + Great Expectations + Apache Atlas (thay cho Real-time Order Monitoring ban đầu)
+4. **HR Analytics Platform** — PostgreSQL → MySQL → dbt (SCD2) → XGBoost + SHAP → dashboard → Airflow → CI (thay cho Data Governance đã gỡ)
 
 ### i18n EN/VI
 - 100% song ngữ — static text qua `data-i18n`, project content qua `PROJECT_TRANSLATIONS`

@@ -45,7 +45,6 @@ const TRANSLATIONS = {
     'filter.analytics':   'Analytics',
     'filter.ai':          'AI / ML',
     'filter.realtime':    'Real-time',
-    'filter.governance':  'Governance',
 
     // Contact
     'contact.tag':   'Contact',
@@ -113,7 +112,6 @@ const TRANSLATIONS = {
     'filter.analytics':   'Analytics',
     'filter.ai':          'AI / ML',
     'filter.realtime':    'Thời gian thực',
-    'filter.governance':  'Quản trị dữ liệu',
 
     // Contact
     'contact.tag':   'Liên hệ',
@@ -179,19 +177,6 @@ const PROJECT_TRANSLATIONS = {
         'Result auto-charting + one-click "Explain SQL" in plain language',
       ],
     },
-    'data-governance': {
-      title:    'Data Governance & Quality Platform',
-      tagline:  'Automated data contracts, lineage tracking, and quality monitoring across the warehouse',
-      desc:     'End-to-end data governance platform enforcing data contracts, automated quality checks, column-level lineage, and PII classification — reducing downstream incidents from silent bad data.',
-      highlights: [
-        'Data contracts enforced at ingestion: schema, nullability, value range, referential integrity',
-        'Great Expectations suites auto-generated from dbt model metadata — zero manual config',
-        'Column-level lineage tracked via Apache Atlas: source table → transformation → BI field',
-        'PII scanner classifies sensitive columns (name, phone, email) and flags unmasked exposures',
-        'Quality score per domain: freshness + completeness + validity aggregated into a single SLA metric',
-        'Airflow DAG gates downstream pipelines — bad data quarantined before reaching the warehouse',
-      ],
-    },
     'hr-analytics-platform': {
       title:    'HR Analytics Platform',
       tagline:  'People data → insight → action — workforce analytics from hire to exit',
@@ -247,19 +232,6 @@ const PROJECT_TRANSLATIONS = {
         'An toàn SQL 2 lớp: guard tĩnh chỉ cho 1 câu SELECT, và query chạy bằng role DB chỉ-đọc least-privilege',
         'Dashboard phân tích realtime: KPI auto-refresh + chart market-cap / biến động / xu hướng giá / volume / sentiment',
         'Tự chọn chart + nút "Explain SQL" giải thích câu lệnh bằng tiếng người',
-      ],
-    },
-    'data-governance': {
-      title:    'Nền Tảng Quản Trị & Chất Lượng Dữ Liệu',
-      tagline:  'Data contract tự động, theo dõi lineage và giám sát chất lượng xuyên suốt warehouse',
-      desc:     'Nền tảng quản trị dữ liệu end-to-end: kiểm soát data contract, kiểm tra chất lượng tự động, lineage cấp cột và phân loại PII — giảm thiểu sự cố downstream do dữ liệu xấu âm thầm.',
-      highlights: [
-        'Data contract kiểm soát tại điểm ingestion: schema, null, value range, referential integrity',
-        'Great Expectations suite tự sinh từ metadata dbt model — không cần cấu hình thủ công',
-        'Lineage cấp cột qua Apache Atlas: từ bảng nguồn → transformation → trường BI',
-        'PII scanner phân loại cột nhạy cảm (tên, SĐT, email) và cảnh báo khi chưa được mask',
-        'Quality score theo domain: freshness + completeness + validity gộp thành 1 SLA metric',
-        'Airflow DAG chặn pipeline downstream — dữ liệu xấu bị cách ly trước khi vào warehouse',
       ],
     },
     'hr-analytics-platform': {

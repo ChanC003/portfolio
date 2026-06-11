@@ -95,8 +95,8 @@ const KB_DATA = {
     {
       match: ['project', 'portfolio', 'show me', 'what.*built',
               'dự án', 'làm gì', 'đã làm', 'xem'],
-      en: "Chang has 4 end-to-end portfolio projects:\n\n1️⃣ **Real-Time Banking Pipeline** — PostgreSQL → Kafka CDC → Snowflake → dbt → Power BI\n2️⃣ **Logistics Analytics Platform** — DuckDB + dbt + Airflow + Power BI\n3️⃣ **AI Analytics Assistant** — NL→SQL with OpenAI/Ollama + Streamlit\n4️⃣ **Data Governance & Quality Platform** — dbt contracts + Great Expectations + Apache Atlas\n\n👆 Click any card above to see architecture diagrams + key engineering decisions!",
-      vi: "Chang có 4 dự án portfolio end-to-end:\n\n1️⃣ **Pipeline Ngân Hàng Thời Gian Thực** — PostgreSQL → Kafka CDC → Snowflake → dbt → Power BI\n2️⃣ **Nền Tảng Analytics Logistics** — DuckDB + dbt + Airflow + Power BI\n3️⃣ **Trợ Lý Analytics Bằng AI** — NL→SQL với OpenAI/Ollama + Streamlit\n4️⃣ **Nền Tảng Quản Trị & Chất Lượng Dữ Liệu** — dbt contracts + Great Expectations + Apache Atlas\n\n👆 Click card phía trên để xem kiến trúc + quyết định kỹ thuật!",
+      en: "Chang has 4 end-to-end portfolio projects:\n\n1️⃣ **Real-Time Banking Pipeline** — PostgreSQL → Kafka CDC → Snowflake → dbt → Power BI\n2️⃣ **Logistics Analytics Platform** — DuckDB + dbt + Airflow + Power BI\n3️⃣ **AI Analytics Assistant** — NL→SQL with OpenAI/Ollama + Streamlit\n4️⃣ **HR Analytics Platform** — PostgreSQL → MySQL → dbt (SCD2) → XGBoost + SHAP → dashboard → Airflow → CI\n\n👆 Click any card above to see architecture diagrams + key engineering decisions!",
+      vi: "Chang có 4 dự án portfolio end-to-end:\n\n1️⃣ **Pipeline Ngân Hàng Thời Gian Thực** — PostgreSQL → Kafka CDC → Snowflake → dbt → Power BI\n2️⃣ **Nền Tảng Analytics Logistics** — DuckDB + dbt + Airflow + Power BI\n3️⃣ **Trợ Lý Analytics Bằng AI** — NL→SQL với OpenAI/Ollama + Streamlit\n4️⃣ **Nền Tảng HR Analytics** — PostgreSQL → MySQL → dbt (SCD2) → XGBoost + SHAP → dashboard → Airflow → CI\n\n👆 Click card phía trên để xem kiến trúc + quyết định kỹ thuật!",
     },
 
     {
@@ -117,13 +117,6 @@ const KB_DATA = {
               'trợ lý', 'ngôn ngữ tự nhiên'],
       en: "🤖 **AI Analytics Assistant** — natural language → SQL → answer:\n\n• Schema-aware prompting: injects table DDL + sample rows into LLM context\n• Dual model support — OpenAI GPT-4 for production, Ollama (llama3) for local/offline\n• Query safety layer: read-only executor + SQL injection pattern detection\n• Result auto-charting: LLM decides bar/line/table based on query semantics\n• Conversation memory: follow-up questions retain prior context\n• Streamlit UI with query history, copy-to-clipboard, and SQL explain toggle\n\nThis is Chang's proof that data engineers stay valuable in the AI era — by owning the schema, safety, and trust layer.",
       vi: "🤖 **Trợ Lý Analytics Bằng AI** — câu hỏi tự nhiên → SQL → trả lời:\n\n• Prompt hiểu schema: inject DDL + sample row vào context LLM\n• Hỗ trợ 2 model — GPT-4 cho production, Ollama (llama3) cho local/offline\n• Lớp bảo vệ query: chỉ đọc + phát hiện pattern SQL injection\n• Tự chọn chart: LLM quyết định bar/line/table theo ngữ nghĩa query\n• Bộ nhớ hội thoại: câu follow-up giữ nguyên context cũ\n• Streamlit UI: lịch sử query, copy-to-clipboard, toggle SQL explain\n\nĐây là minh chứng của Chang: data engineer vẫn quý giá trong kỷ nguyên AI — nhờ làm chủ schema, safety và trust layer.",
-    },
-
-    {
-      match: ['governance', 'data quality', 'lineage', 'great expectations', 'atlas', 'pii',
-              'quản trị', 'chất lượng'],
-      en: "🛡️ **Data Governance & Quality Platform**:\n\n• Data contracts enforced at ingestion: schema, nullability, value range, referential integrity\n• Great Expectations suites auto-generated from dbt model metadata — zero manual config\n• Column-level lineage via Apache Atlas: source table → transformation → BI field\n• PII scanner classifies sensitive columns (name, phone, email) and flags unmasked exposures\n• Quality score per domain: freshness + completeness + validity → single SLA metric\n• Airflow DAG gates downstream pipelines — bad data quarantined before reaching warehouse",
-      vi: "🛡️ **Nền Tảng Quản Trị & Chất Lượng Dữ Liệu**:\n\n• Data contract kiểm soát tại ingestion: schema, null, value range, referential integrity\n• Great Expectations suite tự sinh từ metadata dbt model — không cấu hình thủ công\n• Lineage cấp cột qua Apache Atlas: bảng nguồn → transformation → trường BI\n• PII scanner phân loại cột nhạy cảm (tên, SĐT, email) và cảnh báo khi chưa mask\n• Quality score theo domain: freshness + completeness + validity → 1 SLA metric\n• Airflow DAG chặn pipeline downstream — dữ liệu xấu bị cách ly trước khi vào warehouse",
     },
 
     // ---------- 6. Career ----------

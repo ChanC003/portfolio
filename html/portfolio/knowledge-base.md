@@ -165,18 +165,6 @@ _(điền 2-3 câu giới thiệu bằng tiếng Việt)_
 
 ---
 
-### Project 4: Data Governance & Quality Platform
-**Tech:** dbt, Great Expectations, Apache Atlas, Python, PostgreSQL, Airflow, Grafana
-
-**Problem solved:** _(điền)_
-**Role:** _(điền)_
-**Key decisions:**
-- _(điền)_
-**Outcome:**
-- _(điền)_
-
----
-
 ## 6. Personality & Working Style
 [kw: personality, style, character, tính cách, làm việc, collab]
 
