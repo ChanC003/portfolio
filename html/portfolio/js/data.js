@@ -70,7 +70,7 @@ const PROJECTS = [
       'Data quality gate: Python assertions on 5 mart tables (row count + null key) — DAG fails if mart data corrupted',
       'Full stack single-command: docker-compose up spins airflow-db + airflow-init + webserver + scheduler + metabase',
     ],
-    githubUrl: '#',
+    githubUrl: 'https://github.com/ChanC003/logistics-analytics-platform',
     demoUrl: '#',
   },
   {
