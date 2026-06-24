@@ -72,6 +72,12 @@ const PROJECTS = [
     ],
     githubUrl: 'https://github.com/ChanC003/logistics-analytics-platform',
     demoUrl: '#',
+    screenshots: [
+      { src: 'screenshots/metabase-kpi-overview.png',       caption: 'KPI Overview — weekly shipment trend + success rate across 3 regions' },
+      { src: 'screenshots/metabase-hub-performance.png',    caption: 'Hub Performance — throughput & SLA by warehouse (top 10 bar chart)' },
+      { src: 'screenshots/metabase-sla-analysis.png',       caption: 'SLA Analysis — breach rate by region + failure reason distribution' },
+      { src: 'screenshots/metabase-cod-reconciliation.png', caption: 'COD Reconciliation — discrepancy & collection rate by region/quarter' },
+    ],
   },
   {
     id: 'ai-analytics-assistant',
